@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "project foundry",
   "scripts": {
-    "pi": "agentignore run pi"
+    "pi": "pi",
+    "piwithignore": "agentignore run pi"
   },
   "repository": {
     "type": "git",
