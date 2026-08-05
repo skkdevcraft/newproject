@@ -1,0 +1,17 @@
+{
+  "name": "foundry",
+  "version": "1.0.0",
+  "description": "project foundry",
+  "scripts": {
+    "pi": "agentignore run pi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skkdevcraft/newproject.git"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@earendil-works/pi-coding-agent": "^0.83.0",
+    "@xlansoftware/agentignore": "^0.4.3"
+  }
+}
