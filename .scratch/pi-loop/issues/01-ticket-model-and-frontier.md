@@ -4,10 +4,10 @@
 
 **Blocked by:** None — can start immediately.
 
-**Status:** ready-for-agent
+**Status:** done
 
-- [ ] Reads `Status`, `Blocked by` references, and `- [ ]` acceptance boxes from a feature's ticket files.
-- [ ] A ticket is workable only when its status is `ready-for-agent` (or `in-progress`, for crash recovery) and every ticket it lists under `Blocked by` is `done`.
-- [ ] The next workable ticket is returned in dependency order; blocked and malformed tickets are excluded.
-- [ ] Rewriting a status or ticking an acceptance box preserves the rest of the ticket file unchanged.
-- [ ] A missing or malformed status is reported and skipped safely, never causing a wrong pick or a crash.
+- [x] Reads `Status`, `Blocked by` references, and `- [ ]` acceptance boxes from a feature's ticket files.
+- [x] A ticket is workable only when its status is `ready-for-agent` (or `in-progress`, for crash recovery) and every ticket it lists under `Blocked by` is `done`.
+- [x] The next workable ticket is returned in dependency order; blocked and malformed tickets are excluded.
+- [x] Rewriting a status or ticking an acceptance box preserves the rest of the ticket file unchanged.
+- [x] A missing or malformed status is reported and skipped safely, never causing a wrong pick or a crash.
