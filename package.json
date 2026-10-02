@@ -1,18 +1,35 @@
 {
-  "name": "foundry",
-  "version": "1.0.0",
-  "description": "project foundry",
-  "scripts": {
-    "pi": "pi",
-    "piwithignore": "agentignore run pi"
-  },
+  "name": "@skkdevcraft/pi-loop",
+  "version": "0.1.0",
+  "description": "Pi extension that works a project's .scratch/ tickets to completion, one ticket per iteration, in a fresh session per step.",
+  "type": "module",
+  "license": "ISC",
+  "keywords": [
+    "pi-package"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/skkdevcraft/newproject.git"
   },
-  "keywords": [],
-  "dependencies": {
+  "pi": {
+    "extensions": [
+      "./extensions/loop.ts"
+    ]
+  },
+  "scripts": {
+    "pi": "pi",
+    "piwithignore": "agentignore run pi",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test \"test/**/*.test.ts\""
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
     "@earendil-works/pi-coding-agent": "*",
-    "@xlansoftware/agentignore": "^0.4.3"
+    "@types/node": "^26.6.4",
+    "@xlansoftware/agentignore": "^0.4.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
   }
 }
