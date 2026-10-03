@@ -6,3 +6,7 @@ sudo ufw allow from 172.17.0.0/16 to any port 1234 proto tcp
 
 cp .pi/agent/models.json ~/.pi/agent/models.json
 ```
+
+```sh
+docker exec -it -u node strange_fermi /bin/bash
+```
